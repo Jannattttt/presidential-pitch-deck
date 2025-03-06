@@ -1,0 +1,49 @@
+.foreword {
+    background-color: var(--gray-color);
+  }
+  
+  .foreword-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .foreword-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .foreword-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .foreword-card h3 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .foreword-content {
+    padding: 20px;
+  }
+  
+  .foreword-content p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .foreword-card h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  

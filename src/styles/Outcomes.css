@@ -1,0 +1,73 @@
+.outcomes {
+    background-color: var(--light-color);
+  }
+  
+  .outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .outcome-card {
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .outcome-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .outcome-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .outcome-icon.transformational {
+    background: var(--primary-color) url("/icon-transform.svg") center / 50% no-repeat;
+  }
+  
+  .outcome-icon.relationships {
+    background: var(--secondary-color) url("/icon-relationships.svg") center / 50% no-repeat;
+  }
+  
+  .outcome-icon.birth {
+    background: var(--accent-color) url("/icon-birth.svg") center / 50% no-repeat;
+  }
+  
+  .outcome-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .outcome-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .outcome-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .outcome-card h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  

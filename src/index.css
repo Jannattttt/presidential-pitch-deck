@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ce1126; /* Ghana red */
+  --secondary-color: #fcd116; /* Ghana yellow */
+  --accent-color: #006b3f; /* Ghana green */
+  --dark-color: #000000; /* Black */
+  --light-color: #ffffff; /* White */
+  --gray-color: #f5f5f5;
+  --text-color: #333333;
+  --text-light: #666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color)  sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+

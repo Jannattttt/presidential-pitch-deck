@@ -1,0 +1,68 @@
+.visual-appeal {
+    background-color: var(--light-color);
+  }
+  
+  .visual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .visual-card {
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .visual-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .visual-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+  }
+  
+  .visual-image.cover-design {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/cover-design.jpg") center / cover no-repeat;
+  }
+  
+  .visual-image.inside-spread {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/inside-spread.jpg") center / cover
+      no-repeat;
+  }
+  
+  .visual-card:hover .visual-image {
+    transform: scale(1.1);
+  }
+  
+  .visual-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .visual-card p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .visual-image {
+      height: 200px;
+    }
+  
+    .visual-card h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
