@@ -1,4 +1,5 @@
 import "../styles/Structure.css"
+import image4 from "../assets/struct.jpg";
 
 const Structure = () => {
   return (
@@ -10,7 +11,9 @@ const Structure = () => {
 
         <div className="structure-content">
           <div className="structure-image">
-            <div className="structure-image-placeholder"></div>
+            <div className="structure-image-placeholder">
+              <img src={image4} alt="Foreword Image 1" />
+            </div>
           </div>
 
           <div className="structure-details">

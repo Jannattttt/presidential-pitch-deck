@@ -16,6 +16,7 @@ import Outcomes from "./components/Outcomes"
 import Conclusion from "./components/Conclusion"
 import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
+import NewsFeed from "./components/NewsFeed"
 import Footer from "./components/Footer"
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <CallToAction />
       <Outcomes />
       <Conclusion />
+      <NewsFeed />
       <Contact />
       <Footer />
     </div>

@@ -29,11 +29,11 @@
   }
   
   .visual-image.cover-design {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/cover-design.jpg") center / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/cover.jpg') center / cover no-repeat;
   }
   
   .visual-image.inside-spread {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/inside-spread.jpg") center / cover
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/inner.jpg') center / cover
       no-repeat;
   }
   

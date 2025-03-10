@@ -52,6 +52,11 @@ const Navbar = ({ scrollPosition }) => {
             </a>
           </li>
           <li>
+            <a href="#news-feed" onClick={() => setMenuOpen(false)}>
+              Updates
+            </a>
+          </li>
+          <li>
             <a href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
