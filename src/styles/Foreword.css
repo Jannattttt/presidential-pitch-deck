@@ -69,6 +69,10 @@
     flex-direction: column; /* Stack image and text vertically on small screens */
   }
 
+  .foreword-card.reverse {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+  }
+
   .foreword-image img {
     height: auto;
     object-fit: contain; /* Adjusts image to fit within the container */
