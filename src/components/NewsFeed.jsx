@@ -2,62 +2,68 @@
 
 import { useState } from "react"
 import "../styles/NewsFeed.css"
+import image1 from "../assets/leaders.jpg";
+import image2 from "../assets/news1.jpg";
+import image3 from "../assets/news2.jpg";
+import image4 from "../assets/news3.jpg";
+import image5 from "../assets/news4.jpg";
+import image6 from "../assets/cabinets.jpg";
 
 // Sample news data
 const newsData = [
   {
     id: 1,
-    title: "Launch of Reset Ghana Presidential Devotional Initiative",
+    title: "LEADERS OF GHANA - FROM INDEPENDENCE TO PRESENT (1957 - 2025)",
     date: "February 15, 2025",
     excerpt:
-      "The Reset Ghana Presidential Devotional initiative was officially launched today at a ceremony attended by religious leaders and government officials.",
+      "From 1975 to 2025, Ghana's leadership transitioned from Dr. Kwame Nkrumah through military rulers to democratically elected presidents H.E Jerry John Rawlings, H.E. John Agyekum Kufuor, H.E. John Atta Mills, H.E. John Dramani Mahama, H.E. Nana Addo Dankwa Akufo-Addo, and H.E. John Dramani Mahama again. ",
     category: "Events",
-    image: "/news-1.jpg",
+    image: image1,
   },
   {
     id: 2,
-    title: "Christian and Muslim Leaders Unite for Ghana's Future",
+    title: "MESSAGE FROM H.E. PRESIDENT JOHN DRAMANI MAHAMA",
     date: "February 20, 2025",
     excerpt:
-      "In an unprecedented show of unity, 24 Christian leaders and 24 Imams have committed to leading prayer sessions for the Reset Ghana Presidential Devotional.",
-    category: "Partnerships",
-    image: "/news-2.jpg",
+      "Belobed Ghanaians, I pray that you may proper in all things and be in health, just as your soul prospers! Thank you for giving me this all-important madate, once again, to lead our dear nation.",
+    category: "Events",
+    image: image2,
   },
   {
     id: 3,
-    title: "President Mahama Endorses Interfaith Prayerthon",
+    title: "GOODWILL MESSAGE FROM HIS EXCELLENCY PRESIDENT MAADA BIO OF SIERRA LEONE",
     date: "February 25, 2025",
     excerpt:
-      "His Excellency John Dramani Mahama has officially endorsed the Reset Ghana Presidential Devotional, calling it a 'necessary step toward national unity and progress.'",
-    category: "Announcements",
-    image: "/news-3.jpg",
+      "Dear President John Dramani Mahama, It is with great honor and heartfelt solidarity that I extend my warmest greetings to you as you embark on the 'Reset Ghana Presidential Devotionl', authored by H.E. Rev. Princess Dr. Asie Kabuki Ocansey.",
+    category: "International",
+    image: image3,
   },
   {
     id: 4,
-    title: "National Reflection Journal to be Distributed Nationwide",
+    title: "INTRODUCTION FROM THE AUTHOR - H.E. Rev. Princess Dr. Asie Kabuki Ocansey",
     date: "March 1, 2025",
     excerpt:
-      "The National Reflection Journal, a key component of the Reset Ghana Presidential Devotional, will be distributed to communities across all 16 regions of Ghana.",
+      "When I started to write this devotional, the Holy Spirit took over and changed theh course of the original concept to what it is now",
     category: "Resources",
-    image: "/news-4.jpg",
+    image: image4,
   },
   {
     id: 5,
-    title: "International Leaders Praise Ghana's Interfaith Initiative",
+    title: "FORWORD BY HER EXCELLENCY DR. JOYCE HILDA BANDA - FORMER PRESIDENT OF MALAWI",
     date: "March 5, 2025",
     excerpt:
-      "Leaders from across Africa and beyond have praised Ghana's innovative approach to fostering national unity through interfaith prayer and reflection.",
+      "It is both an honor and a privilege to pen this foreword for the 'Reset Ghana Presidential Devotional', authored by the world renowned servant leader, H.E. Rev. Princess Dr. Asie Kabuki Ocansey, a woman I call my sister.",
     category: "International",
-    image: "/news-5.jpg",
+    image: image5,
   },
   {
     id: 6,
-    title: "Countdown to March 6: The Beginning of a 9-Month Journey",
+    title: "CABINET MINISTERS",
     date: "March 3, 2025",
     excerpt:
-      "With just days remaining until the official start of the Reset Ghana Presidential Devotional, preparations are in full swing across the country.",
+      "The cabinet ministers of Ghana",
     category: "Events",
-    image: "/news-6.jpg",
+    image: image6,
   },
 ]
 
@@ -133,7 +139,9 @@ const NewsFeed = () => {
                 {currentItems.map((news) => (
                   <div className="news-card" key={news.id}>
                     <div className="news-image">
-                      <div className="news-image-placeholder" style={{ backgroundImage: `url(${news.image})` }}></div>
+                      {/* <div className="news-image-placeholder" style={{ backgroundImage: `url(${news.image})` }}></div> */}
+                      <img src={news.image} alt={news.title} className="news-image" />
+
                       <div className="news-category">{news.category}</div>
                     </div>
                     <div className="news-content">
