@@ -9,6 +9,7 @@ import Vision from "./components/Vision"
 import Structure from "./components/Structure"
 import Community from "./components/Community"
 import VisualAppeal from "./components/VisualAppeal"
+import Covers from "./components/Cover" 
 import Timeline from "./components/Timeline"
 import Action from "./components/Action"
 import CallToAction from "./components/CallToAction"
@@ -18,6 +19,8 @@ import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
 import NewsFeed from "./components/NewsFeed"
 import Footer from "./components/Footer"
+import Title from "./components/Title"
+import Cover from "./components/Cover"
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -39,10 +42,12 @@ function App() {
       <Hero />
       <Foreword />
       <Overview />
+      <Title />
       <Vision />
       <Structure />
       <Community />
       <VisualAppeal />
+      <Cover />
       <Timeline />
       <Action />
       <CallToAction />
